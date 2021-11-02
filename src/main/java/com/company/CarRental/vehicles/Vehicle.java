@@ -1,4 +1,4 @@
-package com.company.CarRental;
+package com.company.CarRental.vehicles;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -6,8 +6,8 @@ import javax.persistence.Id;
 @Entity
 public class Vehicle {
 
-    @Id
-    private Long id;
+
+    private @Id Long id;
     private String make;
     private String model;
     private Integer year;
@@ -37,5 +37,17 @@ public class Vehicle {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
     }
 }
